@@ -80,11 +80,11 @@ public class DataHelper {
 
 
     public static String getSymbolOwner() {
-        return "%*%$№@^%$$%^";
+        return "%^%$%%^%$$%^";
     }
 
     public static String getNumeralOwner() {
-        return "1234567891234";
+        return "1234567891866";
     }
 
 
