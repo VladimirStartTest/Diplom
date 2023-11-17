@@ -1,15 +1,15 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testsuite name="ru.netology.test.PaymentTest" tests="18" skipped="0" failures="6" errors="0" timestamp="2023-11-16T10:31:00" hostname="DESKTOP-06L7DGU" time="43.907">
+<testsuite name="ru.netology.test.PaymentTest" tests="18" skipped="0" failures="6" errors="0" timestamp="2023-11-17T10:18:02" hostname="DESKTOP-06L7DGU" time="60.466">
   <properties/>
-  <testcase name="shouldValidActiveCard()" classname="ru.netology.test.PaymentTest" time="3.751"/>
-  <testcase name="shouldIncompleteNumber()" classname="ru.netology.test.PaymentTest" time="0.809"/>
-  <testcase name="shouldTwoNumeralsCVC()" classname="ru.netology.test.PaymentTest" time="0.924"/>
-  <testcase name="shouldZeroMonth()" classname="ru.netology.test.PaymentTest" time="1.404"/>
-  <testcase name="shouldCyrillicOwner()" classname="ru.netology.test.PaymentTest" time="5.069">
-    <failure message="Element not found {by text: Владелец/By.xpath: ../.input__sub}&#13;&#10;Expected: own text &quot;Неверный формат&quot;&#13;&#10;Screenshot: file:/C:/Users/-MSI-/IdeaProjects/My%20diplom/build/reports/tests/1700130672643.6.png&#13;&#10;Page source: file:/C:/Users/-MSI-/IdeaProjects/My%20diplom/build/reports/tests/1700130672643.6.html&#13;&#10;Timeout: 4 s.&#13;&#10;Caused by: NoSuchElementException: no such element: Unable to locate element: {&quot;method&quot;:&quot;css selector&quot;,&quot;selector&quot;:&quot;.input__sub&quot;}" type="com.codeborne.selenide.ex.ElementNotFound">Element not found {by text: Владелец/By.xpath: ../.input__sub}
+  <testcase name="shouldValidActiveCard()" classname="ru.netology.test.PaymentTest" time="10.319"/>
+  <testcase name="shouldIncompleteNumber()" classname="ru.netology.test.PaymentTest" time="3.392"/>
+  <testcase name="shouldTwoNumeralsCVC()" classname="ru.netology.test.PaymentTest" time="1.022"/>
+  <testcase name="shouldZeroMonth()" classname="ru.netology.test.PaymentTest" time="1.082"/>
+  <testcase name="shouldCyrillicOwner()" classname="ru.netology.test.PaymentTest" time="5.554">
+    <failure message="Element not found {by text: Владелец/By.xpath: ../.input__sub}&#13;&#10;Expected: own text &quot;Неверный формат&quot;&#13;&#10;Screenshot: file:/C:/Users/-MSI-/IdeaProjects/My%20diplom/build/reports/tests/1700216303482.6.png&#13;&#10;Page source: file:/C:/Users/-MSI-/IdeaProjects/My%20diplom/build/reports/tests/1700216303482.6.html&#13;&#10;Timeout: 4 s.&#13;&#10;Caused by: NoSuchElementException: no such element: Unable to locate element: {&quot;method&quot;:&quot;css selector&quot;,&quot;selector&quot;:&quot;.input__sub&quot;}" type="com.codeborne.selenide.ex.ElementNotFound">Element not found {by text: Владелец/By.xpath: ../.input__sub}
 Expected: own text &quot;Неверный формат&quot;
-Screenshot: file:/C:/Users/-MSI-/IdeaProjects/My%20diplom/build/reports/tests/1700130672643.6.png
-Page source: file:/C:/Users/-MSI-/IdeaProjects/My%20diplom/build/reports/tests/1700130672643.6.html
+Screenshot: file:/C:/Users/-MSI-/IdeaProjects/My%20diplom/build/reports/tests/1700216303482.6.png
+Page source: file:/C:/Users/-MSI-/IdeaProjects/My%20diplom/build/reports/tests/1700216303482.6.html
 Timeout: 4 s.
 Caused by: NoSuchElementException: no such element: Unable to locate element: {&quot;method&quot;:&quot;css selector&quot;,&quot;selector&quot;:&quot;.input__sub&quot;}
 	at app//com.codeborne.selenide.impl.WebElementSource.createElementNotFoundError(WebElementSource.java:91)
@@ -22,7 +22,7 @@ Caused by: NoSuchElementException: no such element: Unable to locate element: {&
 	at app//com.codeborne.selenide.commands.Commands.execute(Commands.java:163)
 	at app//com.codeborne.selenide.impl.SelenideElementProxy.dispatchAndRetry(SelenideElementProxy.java:132)
 	at app//com.codeborne.selenide.impl.SelenideElementProxy.invoke(SelenideElementProxy.java:84)
-	at app//com.sun.proxy.$Proxy19.shouldHave(Unknown Source)
+	at app//com.sun.proxy.$Proxy18.shouldHave(Unknown Source)
 	at app//ru.netology.page.PaymentPage.ownerWrongFormat(PaymentPage.java:73)
 	at app//ru.netology.test.PaymentTest.shouldCyrillicOwner(PaymentTest.java:83)
 	at java.base@11.0.20/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
@@ -120,10 +120,10 @@ For documentation on this error, please visit: https://www.selenium.dev/document
 Build info: version: '4.11.0', revision: '040bc5406b'
 System info: os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '11.0.20'
 Driver info: org.openqa.selenium.chrome.ChromeDriver
-Command: [aed324d1777c9d9e7452538d4ef04d5b, findChildElement {id=EDFF7B674D9CF5C379050256E749443D_element_979, using=css selector, value=.input__sub}]
-Capabilities {acceptInsecureCerts: true, browserName: chrome, browserVersion: 119.0.6045.124, chrome: {chromedriverVersion: 119.0.6045.105 (38c72552c5e..., userDataDir: C:\Users\-MSI-\AppData\Loca...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:52198}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:52198/devtoo..., se:cdpVersion: 119.0.6045.124, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: accept, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
-Session ID: aed324d1777c9d9e7452538d4ef04d5b
-	at jdk.internal.reflect.GeneratedConstructorAccessor17.newInstance(Unknown Source)
+Command: [f7dc9440ccb302e334ef9a7bec83d6d8, findChildElement {id=DD83B0F83B4C3DAE7EC37DBCBFBA0190_element_958, using=css selector, value=.input__sub}]
+Capabilities {acceptInsecureCerts: true, browserName: chrome, browserVersion: 119.0.6045.124, chrome: {chromedriverVersion: 119.0.6045.105 (38c72552c5e..., userDataDir: C:\Users\-MSI-\AppData\Loca...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:53500}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:53500/devtoo..., se:cdpVersion: 119.0.6045.124, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: accept, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: f7dc9440ccb302e334ef9a7bec83d6d8
+	at jdk.internal.reflect.GeneratedConstructorAccessor18.newInstance(Unknown Source)
 	at java.base@11.0.20/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
 	at java.base@11.0.20/java.lang.reflect.Constructor.newInstance(Constructor.java:490)
 	at app//org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:200)
@@ -145,12 +145,12 @@ Session ID: aed324d1777c9d9e7452538d4ef04d5b
 	... 98 more
 </failure>
   </testcase>
-  <testcase name="shouldZeroYear()" classname="ru.netology.test.PaymentTest" time="0.818"/>
-  <testcase name="shouldSymbolOwner()" classname="ru.netology.test.PaymentTest" time="5.62">
-    <failure message="Element not found {by text: Владелец/By.xpath: ../.input__sub}&#13;&#10;Expected: own text &quot;Неверный формат&quot;&#13;&#10;Screenshot: file:/C:/Users/-MSI-/IdeaProjects/My%20diplom/build/reports/tests/1700130678527.7.png&#13;&#10;Page source: file:/C:/Users/-MSI-/IdeaProjects/My%20diplom/build/reports/tests/1700130678527.7.html&#13;&#10;Timeout: 4 s.&#13;&#10;Caused by: NoSuchElementException: no such element: Unable to locate element: {&quot;method&quot;:&quot;css selector&quot;,&quot;selector&quot;:&quot;.input__sub&quot;}" type="com.codeborne.selenide.ex.ElementNotFound">Element not found {by text: Владелец/By.xpath: ../.input__sub}
+  <testcase name="shouldZeroYear()" classname="ru.netology.test.PaymentTest" time="1.104"/>
+  <testcase name="shouldSymbolOwner()" classname="ru.netology.test.PaymentTest" time="7.573">
+    <failure message="Element not found {by text: Владелец/By.xpath: ../.input__sub}&#13;&#10;Expected: own text &quot;Неверный формат&quot;&#13;&#10;Screenshot: file:/C:/Users/-MSI-/IdeaProjects/My%20diplom/build/reports/tests/1700216310476.7.png&#13;&#10;Page source: file:/C:/Users/-MSI-/IdeaProjects/My%20diplom/build/reports/tests/1700216310476.7.html&#13;&#10;Timeout: 4 s.&#13;&#10;Caused by: NoSuchElementException: no such element: Unable to locate element: {&quot;method&quot;:&quot;css selector&quot;,&quot;selector&quot;:&quot;.input__sub&quot;}" type="com.codeborne.selenide.ex.ElementNotFound">Element not found {by text: Владелец/By.xpath: ../.input__sub}
 Expected: own text &quot;Неверный формат&quot;
-Screenshot: file:/C:/Users/-MSI-/IdeaProjects/My%20diplom/build/reports/tests/1700130678527.7.png
-Page source: file:/C:/Users/-MSI-/IdeaProjects/My%20diplom/build/reports/tests/1700130678527.7.html
+Screenshot: file:/C:/Users/-MSI-/IdeaProjects/My%20diplom/build/reports/tests/1700216310476.7.png
+Page source: file:/C:/Users/-MSI-/IdeaProjects/My%20diplom/build/reports/tests/1700216310476.7.html
 Timeout: 4 s.
 Caused by: NoSuchElementException: no such element: Unable to locate element: {&quot;method&quot;:&quot;css selector&quot;,&quot;selector&quot;:&quot;.input__sub&quot;}
 	at app//com.codeborne.selenide.impl.WebElementSource.createElementNotFoundError(WebElementSource.java:91)
@@ -163,7 +163,7 @@ Caused by: NoSuchElementException: no such element: Unable to locate element: {&
 	at app//com.codeborne.selenide.commands.Commands.execute(Commands.java:163)
 	at app//com.codeborne.selenide.impl.SelenideElementProxy.dispatchAndRetry(SelenideElementProxy.java:132)
 	at app//com.codeborne.selenide.impl.SelenideElementProxy.invoke(SelenideElementProxy.java:84)
-	at app//com.sun.proxy.$Proxy19.shouldHave(Unknown Source)
+	at app//com.sun.proxy.$Proxy18.shouldHave(Unknown Source)
 	at app//ru.netology.page.PaymentPage.ownerWrongFormat(PaymentPage.java:73)
 	at app//ru.netology.test.PaymentTest.shouldSymbolOwner(PaymentTest.java:99)
 	at java.base@11.0.20/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
@@ -261,10 +261,10 @@ For documentation on this error, please visit: https://www.selenium.dev/document
 Build info: version: '4.11.0', revision: '040bc5406b'
 System info: os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '11.0.20'
 Driver info: org.openqa.selenium.chrome.ChromeDriver
-Command: [aed324d1777c9d9e7452538d4ef04d5b, findChildElement {id=DF858C38839BD2935A78EE85EE228D94_element_1064, using=css selector, value=.input__sub}]
-Capabilities {acceptInsecureCerts: true, browserName: chrome, browserVersion: 119.0.6045.124, chrome: {chromedriverVersion: 119.0.6045.105 (38c72552c5e..., userDataDir: C:\Users\-MSI-\AppData\Loca...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:52198}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:52198/devtoo..., se:cdpVersion: 119.0.6045.124, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: accept, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
-Session ID: aed324d1777c9d9e7452538d4ef04d5b
-	at jdk.internal.reflect.GeneratedConstructorAccessor17.newInstance(Unknown Source)
+Command: [f7dc9440ccb302e334ef9a7bec83d6d8, findChildElement {id=56508C04C95613EB7DC5F3000AFD70A9_element_1041, using=css selector, value=.input__sub}]
+Capabilities {acceptInsecureCerts: true, browserName: chrome, browserVersion: 119.0.6045.124, chrome: {chromedriverVersion: 119.0.6045.105 (38c72552c5e..., userDataDir: C:\Users\-MSI-\AppData\Loca...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:53500}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:53500/devtoo..., se:cdpVersion: 119.0.6045.124, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: accept, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: f7dc9440ccb302e334ef9a7bec83d6d8
+	at jdk.internal.reflect.GeneratedConstructorAccessor18.newInstance(Unknown Source)
 	at java.base@11.0.20/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
 	at java.base@11.0.20/java.lang.reflect.Constructor.newInstance(Constructor.java:490)
 	at app//org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:200)
@@ -286,15 +286,15 @@ Session ID: aed324d1777c9d9e7452538d4ef04d5b
 	... 98 more
 </failure>
   </testcase>
-  <testcase name="shouldEmptyCVC()" classname="ru.netology.test.PaymentTest" time="0.738"/>
-  <testcase name="should13Month()" classname="ru.netology.test.PaymentTest" time="0.755"/>
-  <testcase name="shouldPreviousYear()" classname="ru.netology.test.PaymentTest" time="0.733"/>
-  <testcase name="shouldDeclinedCard()" classname="ru.netology.test.PaymentTest" time="4.97">
-    <failure message="Element should have own text &quot;Ошибка! Банк отказал в проведении операции.&quot; {.notification__content}&#13;&#10;Element: '&lt;div class=&quot;notification__content&quot; displayed:false&gt;&lt;/div&gt;'&#13;&#10;Actual value: text=&quot;Операция одобрена Банком.&quot;&#13;&#10;Screenshot: file:/C:/Users/-MSI-/IdeaProjects/My%20diplom/build/reports/tests/1700130686264.8.png&#13;&#10;Page source: file:/C:/Users/-MSI-/IdeaProjects/My%20diplom/build/reports/tests/1700130686264.8.html&#13;&#10;Timeout: 4 s." type="com.codeborne.selenide.ex.ElementShould">Element should have own text &quot;Ошибка! Банк отказал в проведении операции.&quot; {.notification__content}
+  <testcase name="shouldEmptyCVC()" classname="ru.netology.test.PaymentTest" time="1.229"/>
+  <testcase name="should13Month()" classname="ru.netology.test.PaymentTest" time="1.132"/>
+  <testcase name="shouldPreviousYear()" classname="ru.netology.test.PaymentTest" time="1.924"/>
+  <testcase name="shouldDeclinedCard()" classname="ru.netology.test.PaymentTest" time="5.147">
+    <failure message="Element should have own text &quot;Ошибка! Банк отказал в проведении операции.&quot; {.notification__content}&#13;&#10;Element: '&lt;div class=&quot;notification__content&quot; displayed:false&gt;&lt;/div&gt;'&#13;&#10;Actual value: text=&quot;Операция одобрена Банком.&quot;&#13;&#10;Screenshot: file:/C:/Users/-MSI-/IdeaProjects/My%20diplom/build/reports/tests/1700216321784.8.png&#13;&#10;Page source: file:/C:/Users/-MSI-/IdeaProjects/My%20diplom/build/reports/tests/1700216321784.8.html&#13;&#10;Timeout: 4 s." type="com.codeborne.selenide.ex.ElementShould">Element should have own text &quot;Ошибка! Банк отказал в проведении операции.&quot; {.notification__content}
 Element: '&lt;div class=&quot;notification__content&quot; displayed:false&gt;&lt;/div&gt;'
 Actual value: text=&quot;Операция одобрена Банком.&quot;
-Screenshot: file:/C:/Users/-MSI-/IdeaProjects/My%20diplom/build/reports/tests/1700130686264.8.png
-Page source: file:/C:/Users/-MSI-/IdeaProjects/My%20diplom/build/reports/tests/1700130686264.8.html
+Screenshot: file:/C:/Users/-MSI-/IdeaProjects/My%20diplom/build/reports/tests/1700216321784.8.png
+Page source: file:/C:/Users/-MSI-/IdeaProjects/My%20diplom/build/reports/tests/1700216321784.8.html
 Timeout: 4 s.
 	at app//com.codeborne.selenide.impl.WebElementSource.handleError(WebElementSource.java:149)
 	at app//com.codeborne.selenide.impl.WebElementSource.checkConditionAndReturnElement(WebElementSource.java:127)
@@ -304,7 +304,7 @@ Timeout: 4 s.
 	at app//com.codeborne.selenide.commands.Commands.execute(Commands.java:163)
 	at app//com.codeborne.selenide.impl.SelenideElementProxy.dispatchAndRetry(SelenideElementProxy.java:132)
 	at app//com.codeborne.selenide.impl.SelenideElementProxy.invoke(SelenideElementProxy.java:84)
-	at app//com.sun.proxy.$Proxy19.shouldHave(Unknown Source)
+	at app//com.sun.proxy.$Proxy18.shouldHave(Unknown Source)
 	at app//ru.netology.page.PaymentPage.paymentDeclinedForm(PaymentPage.java:45)
 	at app//ru.netology.test.PaymentTest.shouldDeclinedCard(PaymentTest.java:43)
 	at java.base@11.0.20/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
@@ -398,11 +398,11 @@ Timeout: 4 s.
 	at app//worker.org.gradle.process.internal.worker.GradleWorkerMain.main(GradleWorkerMain.java:74)
 </failure>
   </testcase>
-  <testcase name="shouldZeroNumber()" classname="ru.netology.test.PaymentTest" time="5.046">
-    <failure message="Element not found {by text: Номер карты/By.xpath: ../.input__sub}&#13;&#10;Expected: own text &quot;Неверный формат&quot;&#13;&#10;Screenshot: file:/C:/Users/-MSI-/IdeaProjects/My%20diplom/build/reports/tests/1700130691290.9.png&#13;&#10;Page source: file:/C:/Users/-MSI-/IdeaProjects/My%20diplom/build/reports/tests/1700130691290.9.html&#13;&#10;Timeout: 4 s.&#13;&#10;Caused by: NoSuchElementException: no such element: Unable to locate element: {&quot;method&quot;:&quot;css selector&quot;,&quot;selector&quot;:&quot;.input__sub&quot;}" type="com.codeborne.selenide.ex.ElementNotFound">Element not found {by text: Номер карты/By.xpath: ../.input__sub}
+  <testcase name="shouldZeroNumber()" classname="ru.netology.test.PaymentTest" time="5.394">
+    <failure message="Element not found {by text: Номер карты/By.xpath: ../.input__sub}&#13;&#10;Expected: own text &quot;Неверный формат&quot;&#13;&#10;Screenshot: file:/C:/Users/-MSI-/IdeaProjects/My%20diplom/build/reports/tests/1700216327094.9.png&#13;&#10;Page source: file:/C:/Users/-MSI-/IdeaProjects/My%20diplom/build/reports/tests/1700216327094.9.html&#13;&#10;Timeout: 4 s.&#13;&#10;Caused by: NoSuchElementException: no such element: Unable to locate element: {&quot;method&quot;:&quot;css selector&quot;,&quot;selector&quot;:&quot;.input__sub&quot;}" type="com.codeborne.selenide.ex.ElementNotFound">Element not found {by text: Номер карты/By.xpath: ../.input__sub}
 Expected: own text &quot;Неверный формат&quot;
-Screenshot: file:/C:/Users/-MSI-/IdeaProjects/My%20diplom/build/reports/tests/1700130691290.9.png
-Page source: file:/C:/Users/-MSI-/IdeaProjects/My%20diplom/build/reports/tests/1700130691290.9.html
+Screenshot: file:/C:/Users/-MSI-/IdeaProjects/My%20diplom/build/reports/tests/1700216327094.9.png
+Page source: file:/C:/Users/-MSI-/IdeaProjects/My%20diplom/build/reports/tests/1700216327094.9.html
 Timeout: 4 s.
 Caused by: NoSuchElementException: no such element: Unable to locate element: {&quot;method&quot;:&quot;css selector&quot;,&quot;selector&quot;:&quot;.input__sub&quot;}
 	at app//com.codeborne.selenide.impl.WebElementSource.createElementNotFoundError(WebElementSource.java:91)
@@ -415,7 +415,7 @@ Caused by: NoSuchElementException: no such element: Unable to locate element: {&
 	at app//com.codeborne.selenide.commands.Commands.execute(Commands.java:163)
 	at app//com.codeborne.selenide.impl.SelenideElementProxy.dispatchAndRetry(SelenideElementProxy.java:132)
 	at app//com.codeborne.selenide.impl.SelenideElementProxy.invoke(SelenideElementProxy.java:84)
-	at app//com.sun.proxy.$Proxy19.shouldHave(Unknown Source)
+	at app//com.sun.proxy.$Proxy18.shouldHave(Unknown Source)
 	at app//ru.netology.page.PaymentPage.cardNumberWrongFormat(PaymentPage.java:49)
 	at app//ru.netology.test.PaymentTest.shouldZeroNumber(PaymentTest.java:51)
 	at java.base@11.0.20/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
@@ -513,10 +513,10 @@ For documentation on this error, please visit: https://www.selenium.dev/document
 Build info: version: '4.11.0', revision: '040bc5406b'
 System info: os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '11.0.20'
 Driver info: org.openqa.selenium.chrome.ChromeDriver
-Command: [aed324d1777c9d9e7452538d4ef04d5b, findChildElement {id=52CBAEDF3375429FC088730DA7909970_element_1261, using=css selector, value=.input__sub}]
-Capabilities {acceptInsecureCerts: true, browserName: chrome, browserVersion: 119.0.6045.124, chrome: {chromedriverVersion: 119.0.6045.105 (38c72552c5e..., userDataDir: C:\Users\-MSI-\AppData\Loca...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:52198}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:52198/devtoo..., se:cdpVersion: 119.0.6045.124, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: accept, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
-Session ID: aed324d1777c9d9e7452538d4ef04d5b
-	at jdk.internal.reflect.GeneratedConstructorAccessor17.newInstance(Unknown Source)
+Command: [f7dc9440ccb302e334ef9a7bec83d6d8, findChildElement {id=B357FDD3641264DCA8A0F837A74612CE_element_1236, using=css selector, value=.input__sub}]
+Capabilities {acceptInsecureCerts: true, browserName: chrome, browserVersion: 119.0.6045.124, chrome: {chromedriverVersion: 119.0.6045.105 (38c72552c5e..., userDataDir: C:\Users\-MSI-\AppData\Loca...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:53500}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:53500/devtoo..., se:cdpVersion: 119.0.6045.124, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: accept, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: f7dc9440ccb302e334ef9a7bec83d6d8
+	at jdk.internal.reflect.GeneratedConstructorAccessor18.newInstance(Unknown Source)
 	at java.base@11.0.20/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
 	at java.base@11.0.20/java.lang.reflect.Constructor.newInstance(Constructor.java:490)
 	at app//org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:200)
@@ -538,12 +538,12 @@ Session ID: aed324d1777c9d9e7452538d4ef04d5b
 	... 98 more
 </failure>
   </testcase>
-  <testcase name="shouldEmptyNumber()" classname="ru.netology.test.PaymentTest" time="0.66"/>
-  <testcase name="shouldNumeralOwner()" classname="ru.netology.test.PaymentTest" time="5.346">
-    <failure message="Element not found {by text: Владелец/By.xpath: ../.input__sub}&#13;&#10;Expected: own text &quot;Неверный формат&quot;&#13;&#10;Screenshot: file:/C:/Users/-MSI-/IdeaProjects/My%20diplom/build/reports/tests/1700130697033.10.png&#13;&#10;Page source: file:/C:/Users/-MSI-/IdeaProjects/My%20diplom/build/reports/tests/1700130697033.10.html&#13;&#10;Timeout: 4 s.&#13;&#10;Caused by: NoSuchElementException: no such element: Unable to locate element: {&quot;method&quot;:&quot;css selector&quot;,&quot;selector&quot;:&quot;.input__sub&quot;}" type="com.codeborne.selenide.ex.ElementNotFound">Element not found {by text: Владелец/By.xpath: ../.input__sub}
+  <testcase name="shouldEmptyNumber()" classname="ru.netology.test.PaymentTest" time="0.954"/>
+  <testcase name="shouldNumeralOwner()" classname="ru.netology.test.PaymentTest" time="5.373">
+    <failure message="Element not found {by text: Владелец/By.xpath: ../.input__sub}&#13;&#10;Expected: own text &quot;Неверный формат&quot;&#13;&#10;Screenshot: file:/C:/Users/-MSI-/IdeaProjects/My%20diplom/build/reports/tests/1700216333324.10.png&#13;&#10;Page source: file:/C:/Users/-MSI-/IdeaProjects/My%20diplom/build/reports/tests/1700216333324.10.html&#13;&#10;Timeout: 4 s.&#13;&#10;Caused by: NoSuchElementException: no such element: Unable to locate element: {&quot;method&quot;:&quot;css selector&quot;,&quot;selector&quot;:&quot;.input__sub&quot;}" type="com.codeborne.selenide.ex.ElementNotFound">Element not found {by text: Владелец/By.xpath: ../.input__sub}
 Expected: own text &quot;Неверный формат&quot;
-Screenshot: file:/C:/Users/-MSI-/IdeaProjects/My%20diplom/build/reports/tests/1700130697033.10.png
-Page source: file:/C:/Users/-MSI-/IdeaProjects/My%20diplom/build/reports/tests/1700130697033.10.html
+Screenshot: file:/C:/Users/-MSI-/IdeaProjects/My%20diplom/build/reports/tests/1700216333324.10.png
+Page source: file:/C:/Users/-MSI-/IdeaProjects/My%20diplom/build/reports/tests/1700216333324.10.html
 Timeout: 4 s.
 Caused by: NoSuchElementException: no such element: Unable to locate element: {&quot;method&quot;:&quot;css selector&quot;,&quot;selector&quot;:&quot;.input__sub&quot;}
 	at app//com.codeborne.selenide.impl.WebElementSource.createElementNotFoundError(WebElementSource.java:91)
@@ -556,7 +556,7 @@ Caused by: NoSuchElementException: no such element: Unable to locate element: {&
 	at app//com.codeborne.selenide.commands.Commands.execute(Commands.java:163)
 	at app//com.codeborne.selenide.impl.SelenideElementProxy.dispatchAndRetry(SelenideElementProxy.java:132)
 	at app//com.codeborne.selenide.impl.SelenideElementProxy.invoke(SelenideElementProxy.java:84)
-	at app//com.sun.proxy.$Proxy19.shouldHave(Unknown Source)
+	at app//com.sun.proxy.$Proxy18.shouldHave(Unknown Source)
 	at app//ru.netology.page.PaymentPage.ownerWrongFormat(PaymentPage.java:73)
 	at app//ru.netology.test.PaymentTest.shouldNumeralOwner(PaymentTest.java:91)
 	at java.base@11.0.20/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
@@ -654,10 +654,10 @@ For documentation on this error, please visit: https://www.selenium.dev/document
 Build info: version: '4.11.0', revision: '040bc5406b'
 System info: os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '11.0.20'
 Driver info: org.openqa.selenium.chrome.ChromeDriver
-Command: [aed324d1777c9d9e7452538d4ef04d5b, findChildElement {id=36C714E222EC46049297D3E81186BEF4_element_1365, using=css selector, value=.input__sub}]
-Capabilities {acceptInsecureCerts: true, browserName: chrome, browserVersion: 119.0.6045.124, chrome: {chromedriverVersion: 119.0.6045.105 (38c72552c5e..., userDataDir: C:\Users\-MSI-\AppData\Loca...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:52198}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:52198/devtoo..., se:cdpVersion: 119.0.6045.124, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: accept, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
-Session ID: aed324d1777c9d9e7452538d4ef04d5b
-	at jdk.internal.reflect.GeneratedConstructorAccessor17.newInstance(Unknown Source)
+Command: [f7dc9440ccb302e334ef9a7bec83d6d8, findChildElement {id=9BDF260A654D54B12F05CF9487ED93A3_element_1339, using=css selector, value=.input__sub}]
+Capabilities {acceptInsecureCerts: true, browserName: chrome, browserVersion: 119.0.6045.124, chrome: {chromedriverVersion: 119.0.6045.105 (38c72552c5e..., userDataDir: C:\Users\-MSI-\AppData\Loca...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:53500}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:53500/devtoo..., se:cdpVersion: 119.0.6045.124, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: accept, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: f7dc9440ccb302e334ef9a7bec83d6d8
+	at jdk.internal.reflect.GeneratedConstructorAccessor18.newInstance(Unknown Source)
 	at java.base@11.0.20/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
 	at java.base@11.0.20/java.lang.reflect.Constructor.newInstance(Constructor.java:490)
 	at app//org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:200)
@@ -679,13 +679,13 @@ Session ID: aed324d1777c9d9e7452538d4ef04d5b
 	... 98 more
 </failure>
   </testcase>
-  <testcase name="shouldEmptyMonth()" classname="ru.netology.test.PaymentTest" time="0.723"/>
-  <testcase name="shouldEmptyOwner()" classname="ru.netology.test.PaymentTest" time="0.779"/>
-  <testcase name="shouldZeroNumberCVC()" classname="ru.netology.test.PaymentTest" time="5.074">
-    <failure message="Element not found {by text: CVC/CVV/By.xpath: ../.input__sub}&#13;&#10;Expected: own text &quot;Неверный формат&quot;&#13;&#10;Screenshot: file:/C:/Users/-MSI-/IdeaProjects/My%20diplom/build/reports/tests/1700130703860.11.png&#13;&#10;Page source: file:/C:/Users/-MSI-/IdeaProjects/My%20diplom/build/reports/tests/1700130703860.11.html&#13;&#10;Timeout: 4 s.&#13;&#10;Caused by: NoSuchElementException: no such element: Unable to locate element: {&quot;method&quot;:&quot;css selector&quot;,&quot;selector&quot;:&quot;.input__sub&quot;}" type="com.codeborne.selenide.ex.ElementNotFound">Element not found {by text: CVC/CVV/By.xpath: ../.input__sub}
+  <testcase name="shouldEmptyMonth()" classname="ru.netology.test.PaymentTest" time="0.908"/>
+  <testcase name="shouldEmptyOwner()" classname="ru.netology.test.PaymentTest" time="0.796"/>
+  <testcase name="shouldZeroNumberCVC()" classname="ru.netology.test.PaymentTest" time="5.333">
+    <failure message="Element not found {by text: CVC/CVV/By.xpath: ../.input__sub}&#13;&#10;Expected: own text &quot;Неверный формат&quot;&#13;&#10;Screenshot: file:/C:/Users/-MSI-/IdeaProjects/My%20diplom/build/reports/tests/1700216340458.11.png&#13;&#10;Page source: file:/C:/Users/-MSI-/IdeaProjects/My%20diplom/build/reports/tests/1700216340458.11.html&#13;&#10;Timeout: 4 s.&#13;&#10;Caused by: NoSuchElementException: no such element: Unable to locate element: {&quot;method&quot;:&quot;css selector&quot;,&quot;selector&quot;:&quot;.input__sub&quot;}" type="com.codeborne.selenide.ex.ElementNotFound">Element not found {by text: CVC/CVV/By.xpath: ../.input__sub}
 Expected: own text &quot;Неверный формат&quot;
-Screenshot: file:/C:/Users/-MSI-/IdeaProjects/My%20diplom/build/reports/tests/1700130703860.11.png
-Page source: file:/C:/Users/-MSI-/IdeaProjects/My%20diplom/build/reports/tests/1700130703860.11.html
+Screenshot: file:/C:/Users/-MSI-/IdeaProjects/My%20diplom/build/reports/tests/1700216340458.11.png
+Page source: file:/C:/Users/-MSI-/IdeaProjects/My%20diplom/build/reports/tests/1700216340458.11.html
 Timeout: 4 s.
 Caused by: NoSuchElementException: no such element: Unable to locate element: {&quot;method&quot;:&quot;css selector&quot;,&quot;selector&quot;:&quot;.input__sub&quot;}
 	at app//com.codeborne.selenide.impl.WebElementSource.createElementNotFoundError(WebElementSource.java:91)
@@ -698,7 +698,7 @@ Caused by: NoSuchElementException: no such element: Unable to locate element: {&
 	at app//com.codeborne.selenide.commands.Commands.execute(Commands.java:163)
 	at app//com.codeborne.selenide.impl.SelenideElementProxy.dispatchAndRetry(SelenideElementProxy.java:132)
 	at app//com.codeborne.selenide.impl.SelenideElementProxy.invoke(SelenideElementProxy.java:84)
-	at app//com.sun.proxy.$Proxy19.shouldHave(Unknown Source)
+	at app//com.sun.proxy.$Proxy18.shouldHave(Unknown Source)
 	at app//ru.netology.page.PaymentPage.cvcWrongFormat(PaymentPage.java:77)
 	at app//ru.netology.test.PaymentTest.shouldZeroNumberCVC(PaymentTest.java:157)
 	at java.base@11.0.20/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
@@ -796,10 +796,10 @@ For documentation on this error, please visit: https://www.selenium.dev/document
 Build info: version: '4.11.0', revision: '040bc5406b'
 System info: os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '11.0.20'
 Driver info: org.openqa.selenium.chrome.ChromeDriver
-Command: [aed324d1777c9d9e7452538d4ef04d5b, findChildElement {id=E835DB8DAA261988388944516FFFD1EB_element_1493, using=css selector, value=.input__sub}]
-Capabilities {acceptInsecureCerts: true, browserName: chrome, browserVersion: 119.0.6045.124, chrome: {chromedriverVersion: 119.0.6045.105 (38c72552c5e..., userDataDir: C:\Users\-MSI-\AppData\Loca...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:52198}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:52198/devtoo..., se:cdpVersion: 119.0.6045.124, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: accept, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
-Session ID: aed324d1777c9d9e7452538d4ef04d5b
-	at jdk.internal.reflect.GeneratedConstructorAccessor17.newInstance(Unknown Source)
+Command: [f7dc9440ccb302e334ef9a7bec83d6d8, findChildElement {id=E868F2BC811318197D28876CE43F37D6_element_1466, using=css selector, value=.input__sub}]
+Capabilities {acceptInsecureCerts: true, browserName: chrome, browserVersion: 119.0.6045.124, chrome: {chromedriverVersion: 119.0.6045.105 (38c72552c5e..., userDataDir: C:\Users\-MSI-\AppData\Loca...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:53500}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:53500/devtoo..., se:cdpVersion: 119.0.6045.124, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: accept, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: f7dc9440ccb302e334ef9a7bec83d6d8
+	at jdk.internal.reflect.GeneratedConstructorAccessor18.newInstance(Unknown Source)
 	at java.base@11.0.20/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
 	at java.base@11.0.20/java.lang.reflect.Constructor.newInstance(Constructor.java:490)
 	at app//org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:200)
@@ -821,7 +821,7 @@ Session ID: aed324d1777c9d9e7452538d4ef04d5b
 	... 98 more
 </failure>
   </testcase>
-  <testcase name="shouldEmptyYear()" classname="ru.netology.test.PaymentTest" time="0.667"/>
+  <testcase name="shouldEmptyYear()" classname="ru.netology.test.PaymentTest" time="2.187"/>
   <system-out><![CDATA[]]></system-out>
   <system-err><![CDATA[]]></system-err>
 </testsuite>
